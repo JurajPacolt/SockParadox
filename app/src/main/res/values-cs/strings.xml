@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ponožkový Paradox</string>
+    <string name="the_sock">PONOŽKOVÝ</string>
+    <string name="paradox">PARADOX</string>
+    <string name="start">START</string>
+    <string name="lost_sock_lost_mind">Ztratíš ponožku. Ztratíš rozum.</string>
+</resources>

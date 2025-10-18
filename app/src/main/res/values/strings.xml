@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sock Paradox</string>
+    <string name="the_sock">THE SOCK</string>
+    <string name="paradox">PARADOX</string>
+    <string name="start">START</string>
+    <string name="lost_sock_lost_mind">Lost Sock. Lost Mind.</string>
+</resources>
