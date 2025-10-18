@@ -5,4 +5,5 @@
     <string name="paradox">PARADOX</string>
     <string name="start">START</string>
     <string name="lost_sock_lost_mind">Ztratíš ponožku. Ztratíš rozum.</string>
+    <string name="welcome_title_text">Textová adventura</string>
 </resources>

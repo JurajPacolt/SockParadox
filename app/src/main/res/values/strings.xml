@@ -4,4 +4,5 @@
     <string name="paradox">PARADOX</string>
     <string name="start">START</string>
     <string name="lost_sock_lost_mind">Lost Sock. Lost Mind.</string>
+    <string name="welcome_title_text">Text adventure</string>
 </resources>

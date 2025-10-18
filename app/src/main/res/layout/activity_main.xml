@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundLight" tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/welcomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title_text"
+        android:textSize="18sp"
+        android:textColor="@color/colorKeyword"
+        android:paddingTop="24dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="250dp"
@@ -61,7 +74,7 @@
         android:paddingEnd="40dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="48dp"
         app:cornerRadius="24dp" app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
