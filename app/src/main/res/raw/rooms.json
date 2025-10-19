@@ -1,5 +1,33 @@
-[
-  {
-    "roomCode": "BEDROOM"
-  }
-]
+{
+  "objectDefinitions": [
+    {
+      "code": "AAA",
+      "name": "",
+      "description": null
+    }
+  ],
+  "rooms": [
+    {
+      "roomCode": "BEDROOM",
+      "description": null,
+      "objects": [],
+      "compass": [
+        {
+          "direction": "NORTH",
+          "wayTo": "HALLWAY"
+        }
+      ]
+    },
+    {
+      "roomCode": "HALLWAY",
+      "description": null,
+      "objects": [],
+      "compass": [
+        {
+          "direction": "SOUTH",
+          "wayTo": "BEDROOM"
+        }
+      ]
+    }
+  ]
+}
