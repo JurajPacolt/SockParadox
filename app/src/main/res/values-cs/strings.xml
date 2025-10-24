@@ -6,4 +6,112 @@
     <string name="start">START</string>
     <string name="lost_sock_lost_mind">Ztratíš ponožku. Ztratíš rozum.</string>
     <string name="welcome_title_text">Textová adventura</string>
+
+    <string name="game_title">Ponožkový paradox</string>
+    <string name="game_subtitle">Domácí komediální adventura</string>
+
+    <string name="room_bedroom_name">Ložnice</string>
+    <string name="room_bedroom_desc">Budík řve, je 7:55. Na zemi vidíš jen jednu ponožku. Postel je v troskách a někde mňouká kočka.</string>
+
+    <string name="room_hallway_name">Chodba</string>
+    <string name="room_hallway_desc">Úzká chodba s obrazem strýce a bundou na věšáku. Na zemi leží šňůrka.</string>
+
+    <string name="room_bathroom_name">Koupelna</string>
+    <string name="room_bathroom_desc">Koupelna plná pasty. Pračka podezřele hučí a koš na prádlo je prázdný.</string>
+
+    <string name="room_kitchen_name">Kuchyně</string>
+    <string name="room_kitchen_desc">Vůně kávy ve vzduchu. Na lince leží vzkaz od manželky a klíč od bytu.</string>
+
+    <string name="room_living_room_name">Obývák</string>
+    <string name="room_living_room_desc">Tady vládne kocour Muro. Spí na gauči a pod ním vykukuje kousek látky.</string>
+
+    <string name="room_balcony_name">Balkón</string>
+    <string name="room_balcony_desc">Malý balkón s prádlem a holubem, který má umělecké ambice.</string>
+
+    <string name="room_sofa_underworld_name">Pod gaučem</string>
+    <string name="room_sofa_underworld_desc">Pod gaučem najdeš hračku a kousek látky – zřejmě část ztracené ponožky.</string>
+
+    <string name="room_washing_machine_name">Pračku</string>
+    <string name="room_washing_machine_desc">Z pračky vyskočila Cica. V packách drží malý klíček.</string>
+
+    <string name="room_bedroom_secret_name">Ložnice – skříňka</string>
+    <string name="room_bedroom_secret_desc">Vrátil ses do ložnice a otevřel zamčenou skříňku. Uvnitř je jen vtipný vzkaz.</string>
+
+    <string name="room_final_name">Finále</string>
+    <string name="room_final_desc">Stojíš na chodbě s bundou a klíčem. Ve vaku nacházíš druhou ponožku. Máš pár!</string>
+
+    <string name="obj_sock1_name">Červeno-bílá ponožka (levá)</string>
+    <string name="obj_sock1_desc">Tvoje vítězná ponožka s logem oblíbeného týmu.</string>
+
+    <string name="obj_sock2_name">Červeno-bílá ponožka (pravá)</string>
+    <string name="obj_sock2_desc">Ztracená ponožka, která způsobila všechny tvé problémy.</string>
+
+    <string name="obj_string_name">Šňůrka</string>
+    <string name="obj_string_desc">Zdánlivě bezcenný kousek šňůrky, ale možná se bude hodit.</string>
+
+    <string name="obj_key_name">Klíč od bytu</string>
+    <string name="obj_key_desc">Kovový klíč, který tě konečně dostane ven z bytu.</string>
+
+    <string name="obj_cloth_name">Kousek látky</string>
+    <string name="obj_cloth_desc">Už okousaný zbytek tvé ztracené ponožky.</string>
+
+    <string name="obj_small_key_name">Malý klíček</string>
+    <string name="obj_small_key_desc">Cica ho pustila po vyjednávání. Hodí se k zamčené skříňce.</string>
+
+    <string name="obj_note_name">Vzkaz od manželky</string>
+    <string name="obj_note_desc">Šla jsem k mámě. Kočku jsi nekrmil! A nehledaj ponožky v lednici.</string>
+
+    <string name="obj_dirty_jacket_name">Zašpiněná bunda</string>
+    <string name="obj_dirty_jacket_desc">Holub se na ní umělecky vyjádřil.</string>
+
+    <string name="obj_card_name">Kartička</string>
+    <string name="obj_card_desc">Malý papírek s textem: „V tvém oblíbeném sportovním vaku!“</string>
+
+    <string name="npc_muro_name">Kocour Muro</string>
+    <string name="npc_muro_desc">Tvůj líný, sebevědomý kocour, který si myslí, že byt patří jemu.</string>
+
+    <string name="npc_cica_name">Kočka Cica</string>
+    <string name="npc_cica_desc">Zvědavá a trochu vychytralá kočka, která si ráda hraje s ponožkami.</string>
+
+    <string name="npc_pigeon_name">Holub umělec</string>
+    <string name="npc_pigeon_desc">Holub s duší impresionisty, který rád zanechává svůj podpis.</string>
+
+    <string name="action_look_around">ROZHLÉDNI SE</string>
+    <string name="action_look_around_result">Vidíš jen jednu ponožku. Kde může být druhá?</string>
+
+    <string name="action_take_string">VEZMI ŠŇŮRKU</string>
+    <string name="action_take_string_result">Vzals šňůrku. Vypadá zbytečně, ale kdo ví.</string>
+
+    <string name="action_open_washer">OTEVŘI PRAČKU</string>
+    <string name="action_open_washer_result">Z pračky se ozve tiché mňau. Něco tam je!</string>
+
+    <string name="action_read_note">PODÍVEJ SE NA VZKAZ</string>
+    <string name="action_read_note_result">„Šla jsem k mámě. Kočku jsi nekrmil! A nehledaj ponožky v lednici.“</string>
+
+    <string name="action_take_key">VEZMI KLÍČ</string>
+    <string name="action_take_key_result">Vzals klíč od bytu.</string>
+
+    <string name="action_move_couch">POSUŇ GAUČ</string>
+    <string name="action_move_couch_result">Nejde to, je těžký. Možná by pomohlo dát Murovi něco k jídlu.</string>
+
+    <string name="action_feed_muro">NAKRM MURA</string>
+    <string name="action_feed_muro_result">Muro se spokojeně odvalí z gauče a odhalí tmavou díru pod ním.</string>
+
+    <string name="action_use_string_pigeon">POUŽIJ ŠŇŮRKU NA HOLUBA</string>
+    <string name="action_use_string_pigeon_result">Holub odletí, ale později se vrátí a nechá dárek na bundě.</string>
+
+    <string name="action_take_fabric">VEZMI LÁTKU</string>
+    <string name="action_take_fabric_result">Vzals kousek ztracené ponožky.</string>
+
+    <string name="action_give_fabric_cica">DEJ LÁTKU CICE</string>
+    <string name="action_give_fabric_cica_result">Cica spokojeně zamňouká a pustí malý klíček.</string>
+
+    <string name="action_use_smallkey_cabinet">POUŽIJ MALÝ KLÍČEK NA SKŘÍŇKU</string>
+    <string name="action_use_smallkey_cabinet_result">Otevřel jsi skříňku. Uvnitř je jen papírek s vzkazem.</string>
+
+    <string name="action_look_bag">PODÍVEJ SE DO VAKU</string>
+    <string name="action_look_bag_result">Vítězství! Našel jsi druhou ponožku a vyřešil Ponožkový paradox!</string>
+
+    <string name="ending_message">Gratuluji, Fero! Ponožkový paradox vyřešen!</string>
+
 </resources>

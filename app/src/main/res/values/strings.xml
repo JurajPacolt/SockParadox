@@ -5,4 +5,112 @@
     <string name="start">START</string>
     <string name="lost_sock_lost_mind">Lost Sock. Lost Mind.</string>
     <string name="welcome_title_text">Text adventure</string>
+
+    <string name="game_title">Sock Paradox</string>
+    <string name="game_subtitle">A domestic comedy adventure</string>
+
+    <string name="room_bedroom_name">Bedroom</string>
+    <string name="room_bedroom_desc">The alarm screams – it\'s 7:55. On the floor lies only one sock. The bed is a mess and somewhere a cat meows.</string>
+
+    <string name="room_hallway_name">Hallway</string>
+    <string name="room_hallway_desc">A narrow hallway with your uncle\'s portrait and a jacket on the hanger. A string lies on the floor.</string>
+
+    <string name="room_bathroom_name">Bathroom</string>
+    <string name="room_bathroom_desc">A battlefield of toothpaste. The washing machine hums suspiciously and the laundry basket is empty.</string>
+
+    <string name="room_kitchen_name">Kitchen</string>
+    <string name="room_kitchen_desc">The smell of coffee fills the air. On the counter lies a note from your wife and the apartment key.</string>
+
+    <string name="room_living_room_name">Living Room</string>
+    <string name="room_living_room_desc">Muro rules here. He sleeps on the couch, and a piece of fabric sticks out from underneath.</string>
+
+    <string name="room_balcony_name">Balcony</string>
+    <string name="room_balcony_desc">A small balcony with laundry hanging and a pigeon with artistic ambitions.</string>
+
+    <string name="room_sofa_underworld_name">Under the Couch</string>
+    <string name="room_sofa_underworld_desc">Beneath the couch you find a toy and a piece of fabric – apparently part of the missing sock.</string>
+
+    <string name="room_washing_machine_name">Washing Machine</string>
+    <string name="room_washing_machine_desc">Cica jumps out of the washing machine. She\'s holding a small key in her paws.</string>
+
+    <string name="room_bedroom_secret_name">Bedroom – Cabinet</string>
+    <string name="room_bedroom_secret_desc">You returned to the bedroom and opened a locked cabinet. Inside is just a funny note.</string>
+
+    <string name="room_final_name">Finale</string>
+    <string name="room_final_desc">You stand in the hallway with your jacket and key. In your sports bag, you find the second sock. You did it!</string>
+
+    <string name="obj_sock1_name">Red and white sock (left)</string>
+    <string name="obj_sock1_desc">Your lucky sock with your favorite football team\'s logo.</string>
+
+    <string name="obj_sock2_name">Red and white sock (right)</string>
+    <string name="obj_sock2_desc">The missing sock that caused all your problems.</string>
+
+    <string name="obj_string_name">String</string>
+    <string name="obj_string_desc">A seemingly useless piece of string, but it might come in handy.</string>
+
+    <string name="obj_key_name">Apartment key</string>
+    <string name="obj_key_desc">A metal key that finally lets you leave the flat.</string>
+
+    <string name="obj_cloth_name">Piece of fabric</string>
+    <string name="obj_cloth_desc">A chewed fragment of your missing sock.</string>
+
+    <string name="obj_small_key_name">Small key</string>
+    <string name="obj_small_key_desc">Cica dropped it after some negotiation. It fits a small cabinet.</string>
+
+    <string name="obj_note_name">Note from your wife</string>
+    <string name="obj_note_desc">Went to mom’s. You didn’t feed the cat! And don’t look for socks in the fridge.</string>
+
+    <string name="obj_dirty_jacket_name">Dirty jacket</string>
+    <string name="obj_dirty_jacket_desc">A pigeon has artistically expressed itself on it.</string>
+
+    <string name="obj_card_name">Card</string>
+    <string name="obj_card_desc">A small paper card reading: “In your favorite sports bag!”</string>
+
+    <string name="npc_muro_name">Muro the Cat</string>
+    <string name="npc_muro_desc">Your lazy, confident cat who believes he owns the flat.</string>
+
+    <string name="npc_cica_name">Cica the Cat</string>
+    <string name="npc_cica_desc">A curious and slightly cunning cat who loves playing with socks.</string>
+
+    <string name="npc_pigeon_name">Artist Pigeon</string>
+    <string name="npc_pigeon_desc">A pigeon with the soul of an impressionist, who loves to leave his mark.</string>
+
+    <string name="action_look_around">LOOK AROUND</string>
+    <string name="action_look_around_result">You see only one sock. Where could the other one be?</string>
+
+    <string name="action_take_string">TAKE STRING</string>
+    <string name="action_take_string_result">You picked up the string. It might come in handy later.</string>
+
+    <string name="action_open_washer">OPEN WASHING MACHINE</string>
+    <string name="action_open_washer_result">You hear a quiet meow from inside. Something’s in there!</string>
+
+    <string name="action_read_note">READ NOTE</string>
+    <string name="action_read_note_result">"Went to mom’s. You didn’t feed the cat! And don’t look for socks in the fridge."</string>
+
+    <string name="action_take_key">TAKE KEY</string>
+    <string name="action_take_key_result">You took the apartment key.</string>
+
+    <string name="action_move_couch">MOVE COUCH</string>
+    <string name="action_move_couch_result">It’s too heavy. Maybe Muro would move if you feed him.</string>
+
+    <string name="action_feed_muro">FEED MURO</string>
+    <string name="action_feed_muro_result">Muro happily rolls off the couch, revealing a dark hole underneath.</string>
+
+    <string name="action_use_string_pigeon">USE STRING ON PIGEON</string>
+    <string name="action_use_string_pigeon_result">The pigeon flies away, but later returns to leave a gift on your jacket.</string>
+
+    <string name="action_take_fabric">TAKE FABRIC</string>
+    <string name="action_take_fabric_result">You picked up a piece of your missing sock.</string>
+
+    <string name="action_give_fabric_cica">GIVE FABRIC TO CICA</string>
+    <string name="action_give_fabric_cica_result">Cica purrs contentedly and drops a small key.</string>
+
+    <string name="action_use_smallkey_cabinet">USE SMALL KEY ON CABINET</string>
+    <string name="action_use_smallkey_cabinet_result">You unlocked the cabinet. Inside is just a note.</string>
+
+    <string name="action_look_bag">LOOK IN BAG</string>
+    <string name="action_look_bag_result">Victory! You found the second sock and solved the Sock Paradox!</string>
+
+    <string name="ending_message">Congratulations, Fero! The Sock Paradox is solved!</string>
+
 </resources>
