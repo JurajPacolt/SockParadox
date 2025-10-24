@@ -2,13 +2,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zvolte akciu"
+        android:textColor="@color/colorTextOnDark"
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginBottom="8dp" />
@@ -17,6 +19,6 @@
         android:id="@+id/action_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@android:color/darker_gray"
+        android:divider="@color/colorPrimaryDark"
         android:dividerHeight="1dp" />
 </LinearLayout>
