@@ -114,4 +114,11 @@
 
     <string name="ending_message">Gratuluji, Fero! Ponožkový paradox vyřešen!</string>
 
+    <string name="quit_game">Ukončit hru</string>
+    <string name="quit_game_title">Ukončit hru?</string>
+    <string name="quit_game_message">Opravdu chcete ukončit hru?</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="menu">Menu</string>
+
 </resources>

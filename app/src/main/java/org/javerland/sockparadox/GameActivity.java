@@ -5,9 +5,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -31,5 +34,32 @@ public class GameActivity extends AppCompatActivity {
             sheet.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             sheet.show();
         });
+
+        ImageButton menuButton = findViewById(R.id.btn_menu);
+        menuButton.setOnClickListener((v) -> showGameMenu(v));
+    }
+
+    private void showGameMenu(android.view.View anchor) {
+        PopupMenu popup = new PopupMenu(this, anchor);
+        popup.getMenuInflater().inflate(R.menu.game_menu, popup.getMenu());
+        popup.setOnMenuItemClickListener(item -> {
+            if (item.getItemId() == R.id.action_quit_game) {
+                showQuitDialog();
+                return true;
+            }
+            return false;
+        });
+        popup.show();
+    }
+
+    private void showQuitDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.quit_game_title)
+                .setMessage(R.string.quit_game_message)
+                .setPositiveButton(R.string.yes, (dialog, which) -> {
+                    finish();
+                })
+                .setNegativeButton(R.string.no, null)
+                .show();
     }
 }

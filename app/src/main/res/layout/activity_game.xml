@@ -97,6 +97,16 @@
                 android:textColor="@android:color/white"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:layout_margin="8dp" />
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_settings"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:contentDescription="@string/menu"
+                android:layout_margin="8dp" />
         </LinearLayout>
     </com.google.android.material.bottomappbar.BottomAppBar>
 

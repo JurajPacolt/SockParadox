@@ -113,4 +113,11 @@
 
     <string name="ending_message">Congratulations, Fero! The Sock Paradox is solved!</string>
 
+    <string name="quit_game">Quit Game</string>
+    <string name="quit_game_title">Quit Game?</string>
+    <string name="quit_game_message">Do you really want to quit the game?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="menu">Menu</string>
+
 </resources>
