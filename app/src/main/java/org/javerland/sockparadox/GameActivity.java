@@ -3,6 +3,7 @@ package org.javerland.sockparadox;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
@@ -164,7 +165,7 @@ public class GameActivity extends AppCompatActivity {
                 Room.Action selectedAction = actions.get(position);
                 String resultKey = gameEngine.executeAction(selectedAction);
                 
-                Toast.makeText(this, gameEngine.getString(resultKey), Toast.LENGTH_LONG).show();
+                showCustomToast(gameEngine.getString(resultKey));
                 updateUI();
                 sheet.dismiss();
             } else {
@@ -177,8 +178,7 @@ public class GameActivity extends AppCompatActivity {
                         if (npc != null && npc.getDialogues() != null) {
                             for (Npc.Dialogue dialogue : npc.getDialogues()) {
                                 if (counter == dialogueIndex) {
-                                    Toast.makeText(this, gameEngine.getString(dialogue.getTextKey()), 
-                                            Toast.LENGTH_LONG).show();
+                                    showCustomToast(gameEngine.getString(dialogue.getTextKey()));
                                     sheet.dismiss();
                                     return;
                                 }
@@ -206,17 +206,17 @@ public class GameActivity extends AppCompatActivity {
         }
         
         if (inventoryItems.isEmpty()) {
-            Toast.makeText(this, "Inventár je prázdny", Toast.LENGTH_SHORT).show();
+            showCustomToast("Inventár je prázdny");
             return;
         }
         
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.CustomAlertDialog)
                 .setTitle("Inventár")
                 .setItems(inventoryItems.toArray(new String[0]), (dialog, which) -> {
                     String objCode = new ArrayList<>(gameEngine.getInventory()).get(which);
                     ObjectDefinition obj = gameEngine.getObject(objCode);
                     if (obj != null) {
-                        new AlertDialog.Builder(this)
+                        new AlertDialog.Builder(this, R.style.CustomAlertDialog)
                                 .setTitle(gameEngine.getString(obj.getNameKey()))
                                 .setMessage(gameEngine.getString(obj.getDescriptionKey()))
                                 .setPositiveButton("OK", null)
@@ -228,12 +228,24 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void showEndGameDialog() {
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.CustomAlertDialog)
                 .setTitle("Gratulujem!")
                 .setMessage(gameEngine.getString("ending_message"))
                 .setPositiveButton("Koniec", (dialog, which) -> finish())
                 .setCancelable(false)
                 .show();
+    }
+
+    private void showCustomToast(String message) {
+        View layout = getLayoutInflater().inflate(R.layout.custom_toast, null);
+        TextView text = layout.findViewById(R.id.toast_text);
+        text.setText(message);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 150);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
     }
 
     private void showGameMenu(android.view.View anchor) {
@@ -250,7 +262,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void showQuitDialog() {
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.CustomAlertDialog)
                 .setTitle(R.string.quit_game_title)
                 .setMessage(R.string.quit_game_message)
                 .setPositiveButton(R.string.yes, (dialog, which) -> {
