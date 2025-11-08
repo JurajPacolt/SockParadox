@@ -62,6 +62,7 @@ public class Room {
         private List<Condition> conditions;
         private String resultKey;
         private List<Effect> effects;
+        private Boolean repeatable;
 
         public String getCommandKey() {
             return commandKey;
@@ -77,6 +78,10 @@ public class Room {
 
         public List<Effect> getEffects() {
             return effects;
+        }
+
+        public Boolean isRepeatable() {
+            return repeatable != null && repeatable;
         }
     }
 

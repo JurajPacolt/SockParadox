@@ -69,7 +69,7 @@
       "objects": ["SOCK1"],
       "compass": [{ "direction": "SOUTH", "wayTo": "HALLWAY" }],
       "actions": [
-        { "commandKey": "action_look_around", "resultKey": "action_look_around_result", "effects": [] }
+        { "commandKey": "action_look_around", "resultKey": "action_look_around_result", "effects": [], "repeatable": true }
       ]
     },
     {
@@ -107,7 +107,7 @@
       "objects": ["NOTE", "KEY"],
       "compass": [{ "direction": "EAST", "wayTo": "HALLWAY" }],
       "actions": [
-        { "commandKey": "action_read_note", "resultKey": "action_read_note_result", "effects": [] },
+        { "commandKey": "action_read_note", "resultKey": "action_read_note_result", "effects": [], "repeatable": true },
         { "commandKey": "action_take_key", "resultKey": "action_take_key_result", "effects": [{ "addToInventory": "KEY" }] }
       ]
     },
@@ -123,7 +123,7 @@
         { "direction": "EAST", "wayTo": "BALCONY" }
       ],
       "actions": [
-        { "commandKey": "action_move_couch", "resultKey": "action_move_couch_result", "effects": [] }
+        { "commandKey": "action_move_couch", "resultKey": "action_move_couch_result", "effects": [], "repeatable": true }
       ]
     },
     {

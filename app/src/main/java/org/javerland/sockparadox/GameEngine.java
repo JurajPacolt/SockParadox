@@ -23,6 +23,7 @@ public class GameEngine {
     private Map<String, Npc> npcs;
     private Set<String> inventory;
     private Set<String> unlockedRooms;
+    private Set<String> completedActions;
     private String currentRoomCode;
     private boolean gameEnded;
 
@@ -30,6 +31,7 @@ public class GameEngine {
         this.context = context;
         this.inventory = new HashSet<>();
         this.unlockedRooms = new HashSet<>();
+        this.completedActions = new HashSet<>();
         this.rooms = new HashMap<>();
         this.objects = new HashMap<>();
         this.npcs = new HashMap<>();
@@ -101,7 +103,8 @@ public class GameEngine {
 
         if (currentRoom.getActions() != null) {
             for (Room.Action action : currentRoom.getActions()) {
-                if (areConditionsMet(action.getConditions())) {
+                if ((action.isRepeatable() || !isActionCompleted(action.getCommandKey())) 
+                    && areConditionsMet(action.getConditions())) {
                     actions.add(action);
                 }
             }
@@ -112,7 +115,8 @@ public class GameEngine {
                 Npc npc = npcs.get(npcCode);
                 if (npc != null && npc.getActions() != null) {
                     for (Npc.NpcAction npcAction : npc.getActions()) {
-                        if (areConditionsMet(npcAction.getConditions())) {
+                        if ((npcAction.isRepeatable() || !isActionCompleted(npcAction.getCommandKey())) 
+                            && areConditionsMet(npcAction.getConditions())) {
                             Room.Action action = new Room.Action();
                             actions.add(convertNpcAction(npcAction));
                         }
@@ -164,6 +168,8 @@ public class GameEngine {
     }
 
     public String executeAction(Room.Action action) {
+        completedActions.add(action.getCommandKey());
+        
         if (action.getEffects() != null) {
             for (Room.Effect effect : action.getEffects()) {
                 if (effect.getUnlockRoom() != null) {
@@ -207,6 +213,10 @@ public class GameEngine {
             return context.getString(resId);
         }
         return trigger;
+    }
+
+    private boolean isActionCompleted(String commandKey) {
+        return completedActions.contains(commandKey);
     }
 
     public boolean isGameEnded() {

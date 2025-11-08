@@ -47,6 +47,7 @@ public class Npc {
         private List<Room.Condition> conditions;
         private String resultKey;
         private List<Room.Effect> effects;
+        private Boolean repeatable;
 
         public String getCommandKey() {
             return commandKey;
@@ -62,6 +63,10 @@ public class Npc {
 
         public List<Room.Effect> getEffects() {
             return effects;
+        }
+
+        public Boolean isRepeatable() {
+            return repeatable != null && repeatable;
         }
     }
 }
