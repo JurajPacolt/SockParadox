@@ -65,6 +65,7 @@
       "roomCode": "BEDROOM",
       "nameKey": "room_bedroom_name",
       "descriptionKey": "room_bedroom_desc",
+      "imageResource": "bedroom",
       "objects": ["SOCK1"],
       "compass": [{ "direction": "SOUTH", "wayTo": "HALLWAY" }],
       "actions": [
@@ -75,6 +76,7 @@
       "roomCode": "HALLWAY",
       "nameKey": "room_hallway_name",
       "descriptionKey": "room_hallway_desc",
+      "imageResource": "hallway",
       "objects": ["STRING"],
       "compass": [
         { "direction": "NORTH", "wayTo": "BEDROOM" },
@@ -90,6 +92,7 @@
       "roomCode": "BATHROOM",
       "nameKey": "room_bathroom_name",
       "descriptionKey": "room_bathroom_desc",
+      "imageResource": "bathroom",
       "objects": [],
       "compass": [{ "direction": "NORTH", "wayTo": "HALLWAY" }],
       "actions": [
@@ -100,6 +103,7 @@
       "roomCode": "KITCHEN",
       "nameKey": "room_kitchen_name",
       "descriptionKey": "room_kitchen_desc",
+      "imageResource": "kitchen",
       "objects": ["NOTE", "KEY"],
       "compass": [{ "direction": "EAST", "wayTo": "HALLWAY" }],
       "actions": [
@@ -111,6 +115,7 @@
       "roomCode": "LIVING_ROOM",
       "nameKey": "room_living_room_name",
       "descriptionKey": "room_living_room_desc",
+      "imageResource": "livingroom",
       "objects": [],
       "npcs": ["MURO"],
       "compass": [
@@ -125,6 +130,7 @@
       "roomCode": "BALCONY",
       "nameKey": "room_balcony_name",
       "descriptionKey": "room_balcony_desc",
+      "imageResource": "balcony",
       "objects": [],
       "npcs": ["PIGEON"],
       "compass": [{ "direction": "WEST", "wayTo": "LIVING_ROOM" }]
@@ -133,6 +139,7 @@
       "roomCode": "SOFA_UNDERWORLD",
       "nameKey": "room_sofa_underworld_name",
       "descriptionKey": "room_sofa_underworld_desc",
+      "imageResource": "couch",
       "objects": ["CLOTH"],
       "compass": [{ "direction": "WEST", "wayTo": "LIVING_ROOM" }],
       "actions": [
@@ -143,6 +150,7 @@
       "roomCode": "WASHING_MACHINE",
       "nameKey": "room_washing_machine_name",
       "descriptionKey": "room_washing_machine_desc",
+      "imageResource": "washing_machine_inside",
       "objects": [],
       "npcs": ["CICA"],
       "compass": [{ "direction": "SOUTH", "wayTo": "BATHROOM" }]
@@ -151,6 +159,7 @@
       "roomCode": "BEDROOM_SECRET",
       "nameKey": "room_bedroom_secret_name",
       "descriptionKey": "room_bedroom_secret_desc",
+      "imageResource": "bedroom_continue",
       "objects": [],
       "compass": [{ "direction": "SOUTH", "wayTo": "HALLWAY" }],
       "actions": [
@@ -161,6 +170,7 @@
       "roomCode": "FINAL",
       "nameKey": "room_final_name",
       "descriptionKey": "room_final_desc",
+      "imageResource": "final_success_sock_found",
       "objects": ["CARD", "SOCK2"],
       "compass": [],
       "actions": [

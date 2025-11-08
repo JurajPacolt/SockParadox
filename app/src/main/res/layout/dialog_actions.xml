@@ -12,13 +12,13 @@
         android:text="Zvolte akciu"
         android:textColor="@color/colorTextOnDark"
         android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp" />
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp" />
 
     <ListView
         android:id="@+id/action_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@color/colorPrimaryDark"
+        android:divider="@color/colorPrimary"
         android:dividerHeight="1dp" />
 </LinearLayout>
