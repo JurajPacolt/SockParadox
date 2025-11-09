@@ -255,7 +255,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void showGameMenu(android.view.View anchor) {
-        PopupMenu popup = new PopupMenu(this, anchor);
+        PopupMenu popup = new PopupMenu(this, anchor, Gravity.END, 0, R.style.CustomPopupMenu);
         popup.getMenuInflater().inflate(R.menu.game_menu, popup.getMenu());
         popup.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.action_quit_game) {
