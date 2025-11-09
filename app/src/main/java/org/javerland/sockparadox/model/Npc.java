@@ -1,4 +1,4 @@
-package org.javerland.sockparadox;
+package org.javerland.sockparadox.model;
 
 import java.util.List;
 

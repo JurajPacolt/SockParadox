@@ -1,4 +1,4 @@
-package org.javerland.sockparadox;
+package org.javerland.sockparadox.model;
 
 public class ObjectDefinition {
     private String code;

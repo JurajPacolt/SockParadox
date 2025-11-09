@@ -1,9 +1,14 @@
-package org.javerland.sockparadox;
+package org.javerland.sockparadox.engine;
 
 import android.content.Context;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import org.javerland.sockparadox.R;
+import org.javerland.sockparadox.model.Npc;
+import org.javerland.sockparadox.model.ObjectDefinition;
+import org.javerland.sockparadox.model.Room;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

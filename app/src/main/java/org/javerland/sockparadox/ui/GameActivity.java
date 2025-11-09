@@ -1,4 +1,4 @@
-package org.javerland.sockparadox;
+package org.javerland.sockparadox.ui;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -20,6 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+
+import org.javerland.sockparadox.R;
+import org.javerland.sockparadox.engine.GameEngine;
+import org.javerland.sockparadox.model.Npc;
+import org.javerland.sockparadox.model.ObjectDefinition;
+import org.javerland.sockparadox.model.Room;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SockParadox">
         <activity
-            android:name=".GameActivity"
+            android:name=".ui.GameActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.SockParadox.Fullscreen" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
