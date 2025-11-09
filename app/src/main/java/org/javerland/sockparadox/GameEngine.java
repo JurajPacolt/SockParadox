@@ -80,6 +80,7 @@ public class GameEngine {
         unlockedRooms.add("KITCHEN");
         unlockedRooms.add("LIVING_ROOM");
         unlockedRooms.add("BALCONY");
+        unlockedRooms.add("FINAL");
         inventory.add("SOCK1");
     }
 

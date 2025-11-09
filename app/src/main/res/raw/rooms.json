@@ -67,9 +67,18 @@
       "descriptionKey": "room_bedroom_desc",
       "imageResource": "bedroom",
       "objects": ["SOCK1"],
-      "compass": [{ "direction": "SOUTH", "wayTo": "HALLWAY" }],
+      "compass": [
+        { "direction": "SOUTH", "wayTo": "HALLWAY" },
+        { "direction": "EAST", "wayTo": "BEDROOM_SECRET" }
+      ],
       "actions": [
-        { "commandKey": "action_look_around", "resultKey": "action_look_around_result", "effects": [], "repeatable": true }
+        { "commandKey": "action_look_around", "resultKey": "action_look_around_result", "effects": [], "repeatable": true },
+        { 
+          "commandKey": "action_use_smallkey_cabinet", 
+          "conditions": [{ "hasObject": "SMALL_KEY" }],
+          "resultKey": "action_use_smallkey_cabinet_result", 
+          "effects": [{ "unlockRoom": "BEDROOM_SECRET" }] 
+        }
       ]
     },
     {
@@ -94,7 +103,10 @@
       "descriptionKey": "room_bathroom_desc",
       "imageResource": "bathroom",
       "objects": [],
-      "compass": [{ "direction": "NORTH", "wayTo": "HALLWAY" }],
+      "compass": [
+        { "direction": "NORTH", "wayTo": "HALLWAY" },
+        { "direction": "SOUTH", "wayTo": "WASHING_MACHINE" }
+      ],
       "actions": [
         { "commandKey": "action_open_washer", "resultKey": "action_open_washer_result", "effects": [{ "unlockRoom": "WASHING_MACHINE" }] }
       ]
@@ -107,7 +119,7 @@
       "objects": ["NOTE", "KEY"],
       "compass": [{ "direction": "EAST", "wayTo": "HALLWAY" }],
       "actions": [
-        { "commandKey": "action_read_note", "resultKey": "action_read_note_result", "effects": [], "repeatable": true },
+        { "commandKey": "action_read_note", "resultKey": "action_read_note_result", "effects": [{ "addToInventory": "NOTE" }], "repeatable": true },
         { "commandKey": "action_take_key", "resultKey": "action_take_key_result", "effects": [{ "addToInventory": "KEY" }] }
       ]
     },
@@ -120,7 +132,8 @@
       "npcs": ["MURO"],
       "compass": [
         { "direction": "WEST", "wayTo": "HALLWAY" },
-        { "direction": "EAST", "wayTo": "BALCONY" }
+        { "direction": "EAST", "wayTo": "BALCONY" },
+        { "direction": "SOUTH", "wayTo": "SOFA_UNDERWORLD" }
       ],
       "actions": [
         { "commandKey": "action_move_couch", "resultKey": "action_move_couch_result", "effects": [], "repeatable": true }
@@ -141,7 +154,7 @@
       "descriptionKey": "room_sofa_underworld_desc",
       "imageResource": "couch",
       "objects": ["CLOTH"],
-      "compass": [{ "direction": "WEST", "wayTo": "LIVING_ROOM" }],
+      "compass": [{ "direction": "NORTH", "wayTo": "LIVING_ROOM" }],
       "actions": [
         { "commandKey": "action_take_fabric", "resultKey": "action_take_fabric_result", "effects": [{ "addToInventory": "CLOTH" }] }
       ]
@@ -153,26 +166,28 @@
       "imageResource": "washing_machine_inside",
       "objects": [],
       "npcs": ["CICA"],
-      "compass": [{ "direction": "SOUTH", "wayTo": "BATHROOM" }]
+      "compass": [{ "direction": "NORTH", "wayTo": "BATHROOM" }]
     },
     {
       "roomCode": "BEDROOM_SECRET",
       "nameKey": "room_bedroom_secret_name",
       "descriptionKey": "room_bedroom_secret_desc",
       "imageResource": "bedroom_continue",
-      "objects": [],
-      "compass": [{ "direction": "SOUTH", "wayTo": "HALLWAY" }],
-      "actions": [
-        { "commandKey": "action_use_smallkey_cabinet", "resultKey": "action_use_smallkey_cabinet_result", "effects": [{ "unlockRoom": "FINAL" }] }
-      ]
+      "objects": ["CARD"],
+      "compass": [
+        { "direction": "SOUTH", "wayTo": "HALLWAY" },
+        { "direction": "WEST", "wayTo": "BEDROOM" },
+        { "direction": "EAST", "wayTo": "FINAL" }
+      ],
+      "actions": []
     },
     {
       "roomCode": "FINAL",
       "nameKey": "room_final_name",
       "descriptionKey": "room_final_desc",
       "imageResource": "final_success_sock_found",
-      "objects": ["CARD", "SOCK2"],
-      "compass": [],
+      "objects": ["SOCK2"],
+      "compass": [{ "direction": "WEST", "wayTo": "BEDROOM_SECRET" }],
       "actions": [
         { "commandKey": "action_look_bag", "resultKey": "action_look_bag_result", "effects": [{ "addToInventory": "SOCK2" }, { "endGame": true }] }
       ]
