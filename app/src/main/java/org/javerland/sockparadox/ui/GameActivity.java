@@ -159,7 +159,7 @@ public class GameActivity extends AppCompatActivity {
         }
         
         if (actionNames.isEmpty()) {
-            actionNames.add("Žiadne dostupné akcie");
+            actionNames.add(getString(R.string.no_actions_available));
         }
         
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, 
@@ -212,12 +212,12 @@ public class GameActivity extends AppCompatActivity {
         }
         
         if (inventoryItems.isEmpty()) {
-            showCustomToast("Inventár je prázdny");
+            showCustomToast(getString(R.string.inventory_empty));
             return;
         }
         
         new AlertDialog.Builder(this, R.style.CustomAlertDialog)
-                .setTitle("Inventár")
+                .setTitle(R.string.inventory_title)
                 .setItems(inventoryItems.toArray(new String[0]), (dialog, which) -> {
                     String objCode = new ArrayList<>(gameEngine.getInventory()).get(which);
                     ObjectDefinition obj = gameEngine.getObject(objCode);
@@ -229,15 +229,15 @@ public class GameActivity extends AppCompatActivity {
                                 .show();
                     }
                 })
-                .setNegativeButton("Zavrieť", null)
+                .setNegativeButton(R.string.close, null)
                 .show();
     }
 
     private void showEndGameDialog() {
         new AlertDialog.Builder(this, R.style.CustomAlertDialog)
-                .setTitle("Gratulujem!")
+                .setTitle(R.string.congratulations)
                 .setMessage(gameEngine.getString("ending_message"))
-                .setPositiveButton("Koniec", (dialog, which) -> finish())
+                .setPositiveButton(R.string.end_game, (dialog, which) -> finish())
                 .setCancelable(false)
                 .show();
     }

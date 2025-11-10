@@ -1,4 +1,4 @@
-# 🧦 Sock Paradox - Game Walkthrough
+# 🧦 Návod
 
 ## 📖 Story
 Morning, 7:55. The alarm is screaming and you have only 5 minutes to get to the football match. But where is your lucky sock?! You only find one... the other is lost somewhere in the apartment. You must find it, or your team will lose!

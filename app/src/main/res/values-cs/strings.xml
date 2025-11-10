@@ -6,6 +6,10 @@
     <string name="start">START</string>
     <string name="lost_sock_lost_mind">Ztratíš ponožku. Ztratíš rozum.</string>
     <string name="welcome_title_text">Textová adventura</string>
+    <string name="walkthrough">Návod</string>
+    <string name="close">Zavřít</string>
+    <string name="walkthrough_title">Návod</string>
+    <string name="walkthrough_content">📖 PŘÍBĚH:\nRáno, 7:55. Budík křičí a ty máš jen 5 minut na to, abys se dostal na fotbalový zápas. Ale kde je tvoje šťastná ponožka?! Najdeš jen jednu... druhá se ztratila někde v bytě. Musíš ji najít, jinak tvůj tým prohraje!\n\n🎯 CÍL:\nNajít druhou červeno-bílou ponožku a dostat se na fotbalový zápas.\n\n🗺️ KOMPLETNÍ NÁVOD:\n\n★ START: LOŽNICE\n1. ROZHLÉDNI SE\n2. Přejdi na CHODBU (⬇️)\n\n★ CHODBA\n3. VEZMI ŠŇŮRKU\n4. Přejdi do KUCHYNĚ (⬅️)\n\n★ KUCHYNĚ\n5. PŘEČTI VZKAZ\n6. VEZMI KLÍČ\n7. Návrat na CHODBU (➡️)\n\n★ OBÝVÁK\n8. Z chodby přejdi do OBÝVÁKU (➡️)\n9. Interakce s Murem (PROMLUV/POHLAĎ)\n10. NAKRM MURA\n11. Přejdi POD GAUČ (⬅️)\n\n★ POD GAUČEM\n12. VEZMI LÁTKU\n13. Návrat do OBÝVÁKU\n\n★ BALKÓN\n14. Z obýváku přejdi na BALKÓN (➡️)\n15. Interakce s holubem (PROMLUV)\n16. POUŽIJ ŠŇŮRKU NA HOLUBA\n17. Návrat do OBÝVÁKU (⬅️)\n\n★ KOUPELNA\n18. Z chodby přejdi do KOUPELNY (⬇️)\n19. OTEVŘI PRAČKU\n20. Přejdi do PRAČKY\n\n★ PRAČKA\n21. DEJ LÁTKU CICE\n22. Návrat do KOUPELNY a na CHODBU\n\n★ LOŽNICE - TAJNÁ SKŘÍŇKA\n23. Návrat do LOŽNICE (⬆️)\n24. POUŽIJ MALÝ KLÍČEK NA SKŘÍŇKU\n\n★ FINÁLE - VÍTĚZSTVÍ!\n25. Přejdi do místnosti FINÁLE\n26. PODÍVEJ SE DO VAKU\n🎉 VÍTĚZSTVÍ! Našel jsi druhou ponožku!\n\n💡 TIPY:\n• Používej kompasové šipky pro pohyb\n• Tlačítko "Akce" zobrazí dostupné akce\n• Klikni na "Inventář" pro zobrazení předmětů\n• Některé akce vyžadují předměty z inventáře\n• Některé místnosti se odemknou až po splnění akcí\n• PROMLUV s NPC pro zábavné dialogy\n\n🏆 Gratulujeme! Vyřešil jsi Paradox ponožek!\n\nČas hraní: ~10-15 minut\nNáročnost: Střední\nZábavnost: Vysoká 🎉</string>
 
     <string name="game_title">Ponožkový paradox</string>
     <string name="game_subtitle">Domácí komediální adventura</string>
@@ -69,12 +73,17 @@
 
     <string name="npc_muro_name">Kocour Muro</string>
     <string name="npc_muro_desc">Tvůj líný, sebevědomý kocour, který si myslí, že byt patří jemu.</string>
+    <string name="npc_muro_talk">Muro líně mňouká, ale odmítá se pohnout z gauče.</string>
+    <string name="npc_muro_pet">Pohladíš Mura. Užívá si to, ale stále se nehýbe.</string>
 
     <string name="npc_cica_name">Kočka Cica</string>
     <string name="npc_cica_desc">Zvědavá a trochu vychytralá kočka, která si ráda hraje s ponožkami.</string>
+    <string name="npc_cica_talk">Cica tajemně mňouká a ukazuje ti malý lesklý předmět.</string>
+    <string name="npc_cica_look">Cica má něco v packách – vypadá to jako malý klíček!</string>
 
     <string name="npc_pigeon_name">Holub umělec</string>
     <string name="npc_pigeon_desc">Holub s duší impresionisty, který rád zanechává svůj podpis.</string>
+    <string name="npc_pigeon_talk">Vrkú vrkú! Holub se zdá být zaujatý lesklými věcmi.</string>
 
     <string name="action_look_around">ROZHLÉDNI SE</string>
     <string name="action_look_around_result">Vidíš jen jednu ponožku. Kde může být druhá?</string>
@@ -120,5 +129,18 @@
     <string name="yes">Ano</string>
     <string name="no">Ne</string>
     <string name="menu">Menu</string>
+
+    <string name="trigger_talk">PROMLUV</string>
+    <string name="trigger_pet">POHLAĎ</string>
+    <string name="trigger_look">PODÍVEJ SE</string>
+
+    <string name="no_actions_available">Žádné dostupné akce</string>
+    <string name="inventory_empty">Inventář je prázdný</string>
+    <string name="inventory_title">Inventář</string>
+    <string name="congratulations">Gratulujeme!</string>
+    <string name="end_game">Konec</string>
+    <string name="actions">Akce</string>
+    <string name="inventory">Inventář</string>
+    <string name="choose_action">Zvolte akci</string>
 
 </resources>

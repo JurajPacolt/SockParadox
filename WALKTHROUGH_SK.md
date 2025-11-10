@@ -1,4 +1,4 @@
-# 🧦 Sock Paradox - Návod na prehratí hry
+# 🧦 Návod
 
 ## 📖 Príbeh
 Ráno, 7:55. Budík kričí a ty máš len 5 minút na to, aby si sa dostal na futbalový zápas. Ale kde je tvoja šťastná ponožka?! Nájdeš len jednu... druhá sa stratila niekde v byte. Musíš ju nájsť, inak prehrá tvoj tím!

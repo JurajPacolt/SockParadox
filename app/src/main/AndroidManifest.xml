@@ -17,6 +17,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.SockParadox.Fullscreen" />
         <activity
+            android:name=".ui.WalkthroughActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SockParadox.Fullscreen" />
+        <activity
             android:name=".ui.MainActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"

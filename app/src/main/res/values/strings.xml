@@ -5,128 +5,141 @@
     <string name="start">START</string>
     <string name="lost_sock_lost_mind">Lost Sock. Lost Mind.</string>
     <string name="welcome_title_text">Text adventure</string>
+    <string name="walkthrough">Walkthrough</string>
+    <string name="close">Close</string>
+    <string name="walkthrough_title">Walkthrough</string>
+    <string name="walkthrough_content">📖 STORY:\nMorning, 7:55 AM. The alarm is screaming and you have only 5 minutes to get to the football match. But where is your lucky sock?! You find only one... the other one is lost somewhere in the apartment. You must find it, or your team will lose!\n\n🎯 GOAL:\nFind the second red-white sock and get to the football match.\n\n🗺️ COMPLETE WALKTHROUGH:\n\n★ START: BEDROOM\n1. LOOK AROUND\n2. Go to HALLWAY (⬇️)\n\n★ HALLWAY\n3. TAKE STRING\n4. Go to KITCHEN (⬅️)\n\n★ KITCHEN\n5. READ NOTE\n6. TAKE KEY\n7. Return to HALLWAY (➡️)\n\n★ LIVING ROOM\n8. From hallway go to LIVING ROOM (➡️)\n9. Interact with Muro (TALK/PET)\n10. FEED MURO\n11. Go UNDER COUCH (⬅️)\n\n★ UNDER THE COUCH\n12. TAKE FABRIC\n13. Return to LIVING ROOM\n\n★ BALCONY\n14. From living room go to BALCONY (➡️)\n15. Interact with pigeon (TALK)\n16. USE STRING ON PIGEON\n17. Return to LIVING ROOM (⬅️)\n\n★ BATHROOM\n18. From hallway go to BATHROOM (⬇️)\n19. OPEN WASHER\n20. Go to WASHER\n\n★ WASHER\n21. GIVE FABRIC TO CICA\n22. Return to BATHROOM and HALLWAY\n\n★ BEDROOM - SECRET CABINET\n23. Return to BEDROOM (⬆️)\n24. USE SMALL KEY ON CABINET\n\n★ FINALE - VICTORY!\n25. Go to FINALE room\n26. LOOK IN THE BAG\n🎉 VICTORY! You found the second sock!\n\n💡 TIPS:\n• Use compass arrows to move\n• "Actions" button shows available actions\n• Click on "Inventory" to view items\n• Some actions require items from inventory\n• Some rooms unlock after completing actions\n• TALK with NPCs for funny dialogues\n\n🏆 Congratulations! You solved the Sock Paradox!\n\nPlay time: ~10-15 minutes\nDifficulty: Medium\nFun: High 🎉</string>
 
     <string name="game_title">Sock Paradox</string>
     <string name="game_subtitle">A domestic comedy adventure</string>
 
-    <string name="room_bedroom_name">Spálňa</string>
-    <string name="room_bedroom_desc">Budík kričí – je 7:55. Na podlahe leží len jedna ponožka. Posteľ je zmuchlaná a niekde mňauká mačka.</string>
+    <string name="room_bedroom_name">Bedroom</string>
+    <string name="room_bedroom_desc">The alarm is screaming – it\'s 7:55. Only one sock lies on the floor. The bed is a mess and a cat meows somewhere.</string>
 
-    <string name="room_hallway_name">Chodba</string>
-    <string name="room_hallway_desc">Úzka chodba s portrétom strýka a kabátom na vešiaku. Na podlahe leží šnúrka.</string>
+    <string name="room_hallway_name">Hallway</string>
+    <string name="room_hallway_desc">A narrow hallway with a portrait of uncle and a coat on the hanger. A string lies on the floor.</string>
 
-    <string name="room_bathroom_name">Kúpeľňa</string>
-    <string name="room_bathroom_desc">Bojisko zubnej pasty. Práčka podozrivo hučí a kôš na prádlo je prázdny.</string>
+    <string name="room_bathroom_name">Bathroom</string>
+    <string name="room_bathroom_desc">A toothpaste battlefield. The washing machine hums suspiciously and the laundry basket is empty.</string>
 
-    <string name="room_kitchen_name">Kuchyňa</string>
-    <string name="room_kitchen_desc">Vôňa kávy napĺňa vzduch. Na linke leží lístok od ženy a kľúč od bytu.</string>
+    <string name="room_kitchen_name">Kitchen</string>
+    <string name="room_kitchen_desc">The smell of coffee fills the air. A note from wife and an apartment key lie on the counter.</string>
 
-    <string name="room_living_room_name">Obývačka</string>
-    <string name="room_living_room_desc">Tu vládne Muro. Spí na gauči a spod neho vyčnieva kúsok látky.</string>
+    <string name="room_living_room_name">Living Room</string>
+    <string name="room_living_room_desc">Muro rules here. He sleeps on the couch and a piece of fabric sticks out from under it.</string>
 
-    <string name="room_balcony_name">Balkón</string>
-    <string name="room_balcony_desc">Malý balkón s vešaním bielizne a holubom s umeleckými ambíciami.</string>
+    <string name="room_balcony_name">Balcony</string>
+    <string name="room_balcony_desc">A small balcony with laundry hanging and a pigeon with artistic ambitions.</string>
 
-    <string name="room_sofa_underworld_name">Pod gaučom</string>
-    <string name="room_sofa_underworld_desc">Pod gaučom nájdeš hračku a kúsok látky – zrejme časť chýbajúcej ponožky.</string>
+    <string name="room_sofa_underworld_name">Under the Couch</string>
+    <string name="room_sofa_underworld_desc">Under the couch you find a toy and a piece of fabric – apparently part of the missing sock.</string>
 
-    <string name="room_washing_machine_name">Práčka</string>
-    <string name="room_washing_machine_desc">Z práčky vyskočí Cica. V labkách drží malý kľúčik.</string>
+    <string name="room_washing_machine_name">Washing Machine</string>
+    <string name="room_washing_machine_desc">Cica jumps out of the washing machine. She holds a small key in her paws.</string>
 
-    <string name="room_bedroom_secret_name">Spálňa – Skrinka</string>
-    <string name="room_bedroom_secret_desc">Vrátil si sa do spálne a otvoril zamknutú skrinku. Vnútri je len vtipný lístok.</string>
+    <string name="room_bedroom_secret_name">Bedroom – Cabinet</string>
+    <string name="room_bedroom_secret_desc">You returned to the bedroom and opened the locked cabinet. Inside is just a funny note.</string>
 
-    <string name="room_final_name">Finále</string>
-    <string name="room_final_desc">Stojíš v chodbe s kabátom a kľúčom. V športovej taške nájdeš druhú ponožku. Podarilo sa!</string>
+    <string name="room_final_name">Finale</string>
+    <string name="room_final_desc">You stand in the hallway with the coat and key. In the sports bag you find the second sock. Success!</string>
 
-    <string name="obj_sock1_name">Červeno-biela ponožka (ľavá)</string>
-    <string name="obj_sock1_desc">Tvoja šťastná ponožka s logom obľúbeného futbalového tímu.</string>
+    <string name="obj_sock1_name">Red-white sock (left)</string>
+    <string name="obj_sock1_desc">Your lucky sock with the logo of your favorite football team.</string>
 
-    <string name="obj_sock2_name">Červeno-biela ponožka (pravá)</string>
-    <string name="obj_sock2_desc">Chýbajúca ponožka, ktorá spôsobila všetky tvoje problémy.</string>
+    <string name="obj_sock2_name">Red-white sock (right)</string>
+    <string name="obj_sock2_desc">The missing sock that caused all your problems.</string>
 
-    <string name="obj_string_name">Šnúrka</string>
-    <string name="obj_string_desc">Zdanlivo zbytočný kúsok šnúrky, ale možno sa zíde.</string>
+    <string name="obj_string_name">String</string>
+    <string name="obj_string_desc">A seemingly useless piece of string, but it might come in handy.</string>
 
-    <string name="obj_key_name">Kľúč od bytu</string>
-    <string name="obj_key_desc">Kovový kľúč, ktorý ti konečne dovolí opustiť byt.</string>
+    <string name="obj_key_name">Apartment key</string>
+    <string name="obj_key_desc">A metal key that will finally let you leave the apartment.</string>
 
-    <string name="obj_cloth_name">Kúsok látky</string>
-    <string name="obj_cloth_desc">Prežukaný fragment tvojej chýbajúcej ponožky.</string>
+    <string name="obj_cloth_name">Piece of fabric</string>
+    <string name="obj_cloth_desc">A chewed-up fragment of your missing sock.</string>
 
-    <string name="obj_small_key_name">Malý kľúčik</string>
-    <string name="obj_small_key_desc">Cica ho upustila po určitom vyjednávaní. Pasuje k malej skrinke.</string>
+    <string name="obj_small_key_name">Small key</string>
+    <string name="obj_small_key_desc">Cica dropped it after some negotiation. It fits the small cabinet.</string>
 
-    <string name="obj_note_name">Lístok od ženy</string>
-    <string name="obj_note_desc">Išla som k mame. Nezabudni nakŕmiť mačku! A nehľadaj ponožky v chladničke.</string>
+    <string name="obj_note_name">Note from wife</string>
+    <string name="obj_note_desc">I went to mom\'s. Don\'t forget to feed the cat! And don\'t look for socks in the fridge.</string>
 
-    <string name="obj_dirty_jacket_name">Špinavý kabát</string>
-    <string name="obj_dirty_jacket_desc">Holub sa na ňom umelecky vyjadril.</string>
+    <string name="obj_dirty_jacket_name">Dirty jacket</string>
+    <string name="obj_dirty_jacket_desc">The pigeon expressed himself artistically on it.</string>
 
-    <string name="obj_card_name">Kartička</string>
-    <string name="obj_card_desc">Malá papierová kartička s textom: „V tvojej obľúbenej športovej taške!"</string>
+    <string name="obj_card_name">Card</string>
+    <string name="obj_card_desc">A small paper card with text: "In your favorite sports bag!"</string>
 
-    <string name="npc_muro_name">Mačka Muro</string>
-    <string name="npc_muro_desc">Tvoja lenivá, sebavedomá mačka, ktorá si myslí, že vlastní byt.</string>
-    <string name="npc_muro_talk">Muro lenivo mňauká, ale odmieta sa pohnúť z gauča.</string>
-    <string name="npc_muro_pet">Pohladkáš Mura. Užíva si to, ale stále sa nehýbe.</string>
+    <string name="npc_muro_name">Cat Muro</string>
+    <string name="npc_muro_desc">Your lazy, confident cat who thinks he owns the apartment.</string>
+    <string name="npc_muro_talk">Muro lazily meows but refuses to move from the couch.</string>
+    <string name="npc_muro_pet">You pet Muro. He enjoys it but still doesn\'t move.</string>
 
-    <string name="npc_cica_name">Mačka Cica</string>
-    <string name="npc_cica_desc">Zvedavá a trochu prefíkaná mačka, ktorá miluje hranie sa s ponožkami.</string>
-    <string name="npc_cica_talk">Cica tajomne mňauká a ukazuje ti malý lesklý predmet.</string>
-    <string name="npc_cica_look">Cica má niečo v labkách – vyzerá to ako malý kľúčik!</string>
+    <string name="npc_cica_name">Cat Cica</string>
+    <string name="npc_cica_desc">A curious and somewhat cunning cat who loves playing with socks.</string>
+    <string name="npc_cica_talk">Cica mysteriously meows and shows you a small shiny object.</string>
+    <string name="npc_cica_look">Cica has something in her paws – it looks like a small key!</string>
 
-    <string name="npc_pigeon_name">Umelecký holub</string>
-    <string name="npc_pigeon_desc">Holub s dušou impresionistického umelca, ktorý rád zanecháva svoju stopu.</string>
-    <string name="npc_pigeon_talk">Vrkú vrkú! Holub sa zdá byť zaujatý leskľými vecami.</string>
+    <string name="npc_pigeon_name">Artistic pigeon</string>
+    <string name="npc_pigeon_desc">A pigeon with the soul of an impressionist artist who likes to leave his mark.</string>
+    <string name="npc_pigeon_talk">Coo coo! The pigeon seems to be interested in shiny things.</string>
 
-    <string name="action_look_around">ROZHLIADNUŤ SA</string>
-    <string name="action_look_around_result">Vidíš len jednu ponožku. Kde môže byť tá druhá?</string>
+    <string name="action_look_around">LOOK AROUND</string>
+    <string name="action_look_around_result">You see only one sock. Where could the other one be?</string>
 
-    <string name="action_take_string">VZIAŤ ŠNÚRKU</string>
-    <string name="action_take_string_result">Zdvihol si šnúrku. Možno sa neskôr zíde.</string>
+    <string name="action_take_string">TAKE STRING</string>
+    <string name="action_take_string_result">You picked up the string. Maybe it will come in handy later.</string>
 
-    <string name="action_open_washer">OTVORIŤ PRÁČKU</string>
-    <string name="action_open_washer_result">Počuješ tichý mňau zvnútra. Niečo tam je!</string>
+    <string name="action_open_washer">OPEN WASHER</string>
+    <string name="action_open_washer_result">You hear a quiet meow from inside. Something is there!</string>
 
-    <string name="action_read_note">PREČÍTAŤ LÍSTOK</string>
-    <string name="action_read_note_result">„Išla som k mame. Nezabudni nakŕmiť mačku! A nehľadaj ponožky v chladničke."</string>
+    <string name="action_read_note">READ NOTE</string>
+    <string name="action_read_note_result">"I went to mom\'s. Don\'t forget to feed the cat! And don\'t look for socks in the fridge."</string>
 
-    <string name="action_take_key">VZIAŤ KĽÚČ</string>
-    <string name="action_take_key_result">Vzal si kľúč od bytu.</string>
+    <string name="action_take_key">TAKE KEY</string>
+    <string name="action_take_key_result">You took the apartment key.</string>
 
-    <string name="action_move_couch">POSUNÚŤ GAUČ</string>
-    <string name="action_move_couch_result">Je príliš ťažký. Možno by sa Muro pohol, keby si ho nakŕmil.</string>
+    <string name="action_move_couch">MOVE COUCH</string>
+    <string name="action_move_couch_result">It\'s too heavy. Maybe Muro would move if you fed him.</string>
 
-    <string name="action_feed_muro">NAKŔMIŤ MURA</string>
-    <string name="action_feed_muro_result">Muro sa šťastne skotúľa z gauča a odhaľuje tmavú dieru pod ním.</string>
+    <string name="action_feed_muro">FEED MURO</string>
+    <string name="action_feed_muro_result">Muro happily rolls off the couch and reveals a dark hole under it.</string>
 
-    <string name="action_use_string_pigeon">POUŽIŤ ŠNÚRKU NA HOLUBA</string>
-    <string name="action_use_string_pigeon_result">Holub odletí, ale neskôr sa vráti a zanechá dar na tvojom kabáte.</string>
+    <string name="action_use_string_pigeon">USE STRING ON PIGEON</string>
+    <string name="action_use_string_pigeon_result">The pigeon flies away but later returns and leaves a gift on your jacket.</string>
 
-    <string name="action_take_fabric">VZIAŤ LÁTKU</string>
-    <string name="action_take_fabric_result">Zdvihol si kúsok svojej chýbajúcej ponožky.</string>
+    <string name="action_take_fabric">TAKE FABRIC</string>
+    <string name="action_take_fabric_result">You picked up a piece of your missing sock.</string>
 
-    <string name="action_give_fabric_cica">DAŤ LÁTKU CICE</string>
-    <string name="action_give_fabric_cica_result">Cica spokojne pradne a upustí malý kľúčik.</string>
+    <string name="action_give_fabric_cica">GIVE FABRIC TO CICA</string>
+    <string name="action_give_fabric_cica_result">Cica purrs contentedly and drops a small key.</string>
 
-    <string name="action_use_smallkey_cabinet">POUŽIŤ MALÝ KĽÚČ NA SKRINKU</string>
-    <string name="action_use_smallkey_cabinet_result">Odomkol si skrinku. Vnútri je len lístok.</string>
+    <string name="action_use_smallkey_cabinet">USE SMALL KEY ON CABINET</string>
+    <string name="action_use_smallkey_cabinet_result">You unlocked the cabinet. Inside is just a note.</string>
 
-    <string name="action_look_bag">POZRIEŤ DO TAŠKY</string>
-    <string name="action_look_bag_result">Víťazstvo! Našiel si druhú ponožku a vyriešil Paradox ponožiek!</string>
+    <string name="action_look_bag">LOOK IN BAG</string>
+    <string name="action_look_bag_result">Victory! You found the second sock and solved the Sock Paradox!</string>
 
-    <string name="ending_message">Gratulujem, Fero! Paradox ponožiek je vyriešený!</string>
+    <string name="ending_message">Congratulations, Fero! The Sock Paradox is solved!</string>
 
-    <string name="quit_game">Ukončiť hru</string>
-    <string name="quit_game_title">Ukončiť hru?</string>
-    <string name="quit_game_message">Naozaj chceš ukončiť hru?</string>
-    <string name="yes">Áno</string>
-    <string name="no">Nie</string>
+    <string name="quit_game">Quit game</string>
+    <string name="quit_game_title">Quit game?</string>
+    <string name="quit_game_message">Do you really want to quit the game?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
     <string name="menu">Menu</string>
 
-    <string name="trigger_talk">ROZPRÁVAŤ</string>
-    <string name="trigger_pet">POHLADKAŤ</string>
-    <string name="trigger_look">POZRIEŤ</string>
+    <string name="trigger_talk">TALK</string>
+    <string name="trigger_pet">PET</string>
+    <string name="trigger_look">LOOK</string>
+
+    <string name="no_actions_available">No actions available</string>
+    <string name="inventory_empty">Inventory is empty</string>
+    <string name="inventory_title">Inventory</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="end_game">End</string>
+    <string name="actions">Actions</string>
+    <string name="inventory">Inventory</string>
+    <string name="choose_action">Choose action</string>
 
 </resources>
