@@ -46,7 +46,8 @@ public class GameActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_game);
 
-        gameEngine = new GameEngine(this);
+        boolean loadSavedState = getIntent().getBooleanExtra("loadSavedState", false);
+        gameEngine = new GameEngine(this, loadSavedState);
         
         roomImage = findViewById(R.id.room_image);
         roomTitle = findViewById(R.id.room_title);
@@ -237,7 +238,10 @@ public class GameActivity extends AppCompatActivity {
         new AlertDialog.Builder(this, R.style.CustomAlertDialog)
                 .setTitle(R.string.congratulations)
                 .setMessage(gameEngine.getString("ending_message"))
-                .setPositiveButton(R.string.end_game, (dialog, which) -> finish())
+                .setPositiveButton(R.string.end_game, (dialog, which) -> {
+                    gameEngine.resetGame();
+                    finish();
+                })
                 .setCancelable(false)
                 .show();
     }

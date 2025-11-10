@@ -31,8 +31,13 @@ public class GameEngine {
     private Set<String> completedActions;
     private String currentRoomCode;
     private boolean gameEnded;
+    private GameStateManager stateManager;
 
     public GameEngine(Context context) {
+        this(context, false);
+    }
+
+    public GameEngine(Context context, boolean loadSavedState) {
         this.context = context;
         this.inventory = new HashSet<>();
         this.unlockedRooms = new HashSet<>();
@@ -41,8 +46,14 @@ public class GameEngine {
         this.objects = new HashMap<>();
         this.npcs = new HashMap<>();
         this.gameEnded = false;
+        this.stateManager = new GameStateManager(context);
         loadGameData();
-        initializeGame();
+        
+        if (loadSavedState && stateManager.hasSavedState()) {
+            loadGameState();
+        } else {
+            initializeGame();
+        }
     }
 
     private void loadGameData() {
@@ -100,6 +111,7 @@ public class GameEngine {
     public void moveToRoom(String roomCode) {
         if (canMoveToRoom(roomCode)) {
             currentRoomCode = roomCode;
+            saveGameState();
         }
     }
 
@@ -189,6 +201,7 @@ public class GameEngine {
                 }
             }
         }
+        saveGameState();
         return action.getResultKey();
     }
 
@@ -242,6 +255,41 @@ public class GameEngine {
         }
         
         return available;
+    }
+
+    private void saveGameState() {
+        if (!gameEnded) {
+            stateManager.saveGameState(currentRoomCode, inventory, unlockedRooms, 
+                                      completedActions, gameEnded);
+        } else {
+            stateManager.clearGameState();
+        }
+    }
+
+    private void loadGameState() {
+        GameStateManager.GameState state = stateManager.loadGameState();
+        if (state != null) {
+            currentRoomCode = state.currentRoom;
+            inventory = new HashSet<>(state.inventory);
+            unlockedRooms = new HashSet<>(state.unlockedRooms);
+            completedActions = new HashSet<>(state.completedActions);
+            gameEnded = state.gameEnded;
+        } else {
+            initializeGame();
+        }
+    }
+
+    public void resetGame() {
+        stateManager.clearGameState();
+        inventory.clear();
+        unlockedRooms.clear();
+        completedActions.clear();
+        gameEnded = false;
+        initializeGame();
+    }
+
+    public boolean hasSavedState() {
+        return stateManager.hasSavedState();
     }
 
     private static class GameData {

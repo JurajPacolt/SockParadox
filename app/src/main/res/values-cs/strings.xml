@@ -142,5 +142,13 @@
     <string name="actions">Akce</string>
     <string name="inventory">Inventář</string>
     <string name="choose_action">Zvolte akci</string>
+    <string name="settings">Nastavení</string>
+    <string name="settings_title">Možnosti hry</string>
+    <string name="settings_message">Máte uloženou hru. Co chcete udělat?</string>
+    <string name="continue_game">Pokračovat ve hře</string>
+    <string name="reset_game">Resetovat hru</string>
+    <string name="reset_game_title">Resetovat hru?</string>
+    <string name="reset_game_message">Opravdu chcete smazat svůj uložený herní postup?</string>
+    <string name="cancel">Zrušit</string>
 
 </resources>
